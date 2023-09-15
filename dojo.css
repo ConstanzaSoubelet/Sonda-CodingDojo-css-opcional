@@ -1,0 +1,72 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Clase .navbar de la asignación barra de navegación con Flex */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cecccc;
+  padding: 10px 10px;
+  color: #f50aa7;
+  width: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 0 15px;
+  /* Espacio entre elementos de la lista */
+}
+
+/* Clase .row de la asignación Columnas flex-ibles */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 30px 20px 30px;
+  border: 1px solid;
+  text-align: center;
+  width: 500px;
+}
+
+/* Clase .col de la asignación Columnas flex-ibles */
+.col {
+  flex: 1;
+  padding: 10px;
+  border-right: 1px solid #ccc; 
+}
+
+/* Elimina el borde derecho en la última columna */
+.col:last-child {
+  border-right: none;
+}
+
+/* Estilo de botón favorito de la asignación Button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0px 30px;
+  transition: background-color 0.3s ease; /* Agregamos una transición suave */
+}
+
+
+/* Estilo de botón cuando el cursor está sobre él (hover) */
+.btn:hover {
+  background-color: #0056b3; /* Cambia el color de fondo en hover */
+  color: #fff; /* Cambia el color del texto en hover si es necesario */
+}
